@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div style="background-color:#1da1f2; color:white" class="jumbotron">
+    <h1>Vsauce Tweets!</h1>
+    <ul>
+        @foreach(var item in Model)
+        {
+            <li>
+                <h2>@item.text</h2>
+            </li>
+            <br/>
+        }
+    </ul>
+</div>
